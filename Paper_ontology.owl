@@ -1,0 +1,1402 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/smartGridAttackOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/smartGridAttackOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/ertem/ontologies/2019/10/untitled-ontology-4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Access_Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Account"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Admin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adversary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Authentication_Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BYOD_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COTS_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circuit_Breaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communiction_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Configuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control_Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Door_lock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Field_Service_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firewall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firewall_Rules"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firmware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_Network_Protocols"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_Workstation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HMI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICS_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICS_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IED"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IoT_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Logic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine_Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance_Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merging_Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network_Addresses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operating_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_COTS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Others"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outsider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PMU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Printer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RTU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remote"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Router"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SCADA_Workstation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Setting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smartphone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standardized_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Switch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_related"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tablet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transformer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transmission_Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VPN_Server"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vendor_Proprietary_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerability_and_Exposures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wearable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wireless_Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol_Translator_(Gateway)"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Abuses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Attacks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Communicate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Compromises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Configures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Controls"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Exploited_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Exploits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Follows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Functions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Injects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Interacts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Learns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Maliciously_adds_bogus_device_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Maliciously_reconfigures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Physical_access_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Physically_blocks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Physically_steals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Posseses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Queries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ReadsFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Received_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Receives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Records"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Relays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ReportsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Sends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Sent_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Serves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Sniffs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Talks_(protocol)"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AccountRelated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Digital_access_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GOOSE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Password"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Physical_access_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Privilage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Protocol_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RoleRelated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Username"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Access_Point"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Talks_(protocol)"/>
+            <Class IRI="#Wireless_Protocol"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Account"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Role"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Actors"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#BYOD_Device"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Actors"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Uses"/>
+            <Class IRI="#IoT_Device"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Attacks"/>
+            <Class IRI="#System_related"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Compromises"/>
+            <Class IRI="#Account"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Injects"/>
+            <Class IRI="#Malware"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Maliciously_adds_bogus_device_to"/>
+            <Class IRI="#Devices"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Maliciously_reconfigures"/>
+            <Class IRI="#Configuration"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Physically_steals"/>
+            <Class IRI="#BYOD_Device"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Camera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Records"/>
+            <Class IRI="#Actors"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Communiction_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Relays"/>
+            <Class IRI="#Message"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Door_lock"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Physically_blocks"/>
+            <Class IRI="#Outsider"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Firewall"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Follows"/>
+            <Class IRI="#Firewall_Rules"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Insider"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Account"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Malware"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Exploits"/>
+            <Class IRI="#Vulnerabilities"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Message"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Received_by"/>
+            <Class IRI="#Devices"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Message"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Sent_by"/>
+            <Class IRI="#Devices"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Operator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Uses"/>
+            <Class IRI="#SCADA_Workstation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Remote"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Compromises"/>
+            <Class IRI="#VPN_Server"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#User"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Account"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Protocol_Translator_(Gateway)"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ReportsTo"/>
+            <Class IRI="#SCADA_Workstation"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Access_Point"/>
+        <Class IRI="#Communiction_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Account"/>
+        <Class IRI="#Setting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Account"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Authentication_Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Admin"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Admin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Configures"/>
+            <Class IRI="#Devices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Admin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Uses"/>
+            <Class IRI="#Control_Computer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adversary"/>
+        <Class IRI="#Actors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adversary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Learns"/>
+            <Class IRI="#Control_Mechanism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authentication_Method"/>
+        <Class IRI="#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BYOD_Device"/>
+        <Class IRI="#COTS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COTS_Device"/>
+        <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COTS_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Interface"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COTS_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Serves"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="#IoT_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circuit_Breaker"/>
+        <Class IRI="#Physical_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communiction_Device"/>
+        <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communiction_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Interacts"/>
+            <Class IRI="#Devices"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communiction_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Talks_(protocol)"/>
+            <Class IRI="#General_Network_Protocols"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Configuration"/>
+        <Class IRI="#Control_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_Computer"/>
+        <Class IRI="#Control_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_Computer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Machine_Interface"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_Computer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#User_interface"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_Device"/>
+        <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_Mechanism"/>
+        <Class IRI="#Setting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Model"/>
+        <Class IRI="#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devices"/>
+        <Class IRI="#System_related"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Configuration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Software"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Receives"/>
+            <Class IRI="#Message"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Sends"/>
+            <Class IRI="#Message"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devices"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Talks_(protocol)"/>
+            <Class IRI="#Protocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Door_lock"/>
+        <Class IRI="#IoT_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Field_Service_Device"/>
+        <Class IRI="#Control_Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Field_Service_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Queries"/>
+            <Class IRI="#IED"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Field_Service_Device"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Configuration"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firewall"/>
+        <Class IRI="#Communiction_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firewall_Rules"/>
+        <Class IRI="#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firmware"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General_Network_Protocols"/>
+        <Class IRI="#Standardized_Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General_Workstation"/>
+        <Class IRI="#Control_Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generator"/>
+        <Class IRI="#Physical_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HMI"/>
+        <Class IRI="#Control_Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HMI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Queries"/>
+            <Class IRI="#Communiction_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HMI"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Queries"/>
+            <Class IRI="#ICS_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICS_Device"/>
+        <Class IRI="#Control_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICS_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Talks_(protocol)"/>
+            <Class IRI="#ICS_Protocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICS_Protocol"/>
+        <Class IRI="#Standardized_Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICS_Protocol"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#GOOSE"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IED"/>
+        <Class IRI="#ICS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IED"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReadsFrom"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IED"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReportsTo"/>
+            <Class IRI="#PLC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IED"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#Controls"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insider"/>
+        <Class IRI="#Adversary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insider"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Physical_access_to"/>
+            <Class IRI="#System_related"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insider"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Physically_steals"/>
+            <Class IRI="#Field_Service_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interface"/>
+        <Class IRI="#Control_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IoT_Device"/>
+        <Class IRI="#COTS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#BYOD_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local"/>
+        <Class IRI="#Outsider"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Physical_access_to"/>
+            <Class IRI="#System_related"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Physically_steals"/>
+            <Class IRI="#Field_Service_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Logic"/>
+        <Class IRI="#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine_Interface"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Person"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Configures"/>
+            <Class IRI="#ICS_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Configures"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Uses"/>
+            <Class IRI="#Field_Service_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Uses"/>
+            <Class IRI="#General_Workstation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance_Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Uses"/>
+            <Class IRI="#HMI"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malware"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merging_Unit"/>
+        <Class IRI="#ICS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merging_Unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReadsFrom"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <Class IRI="#System_related"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Follows"/>
+            <Class IRI="#Protocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Addresses"/>
+        <Class IRI="#Configuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operating_System"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operating_System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Application"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_COTS"/>
+        <Class IRI="#COTS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Others"/>
+        <Class IRI="#Physical_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outsider"/>
+        <Class IRI="#Adversary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLC"/>
+        <Class IRI="#ICS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Controls"/>
+            <Class IRI="#IED"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReadsFrom"/>
+            <Class IRI="#IED"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PMU"/>
+        <Class IRI="#ICS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PMU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Controls"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PMU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Queries"/>
+            <Class IRI="#IED"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PMU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReadsFrom"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Device"/>
+        <Class IRI="#Control_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReportsTo"/>
+            <Class IRI="#ICS_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Printer"/>
+        <Class IRI="#IoT_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protocol"/>
+        <Class IRI="#Control_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTU"/>
+        <Class IRI="#ICS_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Controls"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Queries"/>
+            <Class IRI="#IED"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Queries"/>
+            <Class IRI="#PMU"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTU"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ReadsFrom"/>
+            <Class IRI="#Physical_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remote"/>
+        <Class IRI="#Outsider"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#Setting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Router"/>
+        <Class IRI="#Communiction_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SCADA_Workstation"/>
+        <Class IRI="#Control_Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SCADA_Workstation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Controls"/>
+            <Class IRI="#Control_Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Setting"/>
+        <Class IRI="#System_related"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smartphone"/>
+        <Class IRI="#BYOD_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Control_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Vulnerabilities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standardized_Protocol"/>
+        <Class IRI="#Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Switch"/>
+        <Class IRI="#Communiction_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tablet"/>
+        <Class IRI="#BYOD_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <Class IRI="#Physical_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transmission_Line"/>
+        <Class IRI="#Physical_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Actors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_interface"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VPN_Server"/>
+        <Class IRI="#Communiction_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VPN_Server"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has"/>
+            <Class IRI="#Authentication_Method"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vendor_Proprietary_Protocol"/>
+        <Class IRI="#Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerabilities"/>
+        <Class IRI="#System_related"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerabilities"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Exploited_by"/>
+            <Class IRI="#Adversary"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerabilities"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Exploited_by"/>
+            <Class IRI="#Malware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wearable"/>
+        <Class IRI="#BYOD_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wireless_Protocol"/>
+        <Class IRI="#Standardized_Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protocol_Translator_(Gateway)"/>
+        <Class IRI="#Communiction_Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protocol_Translator_(Gateway)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Talks_(protocol)"/>
+            <Class IRI="#ICS_Protocol"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Abuses"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Compromises"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Configures"/>
+        <ObjectProperty IRI="#Manages"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Controls"/>
+        <ObjectProperty IRI="#Interacts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Exploited_by"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Exploits"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Follows"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Has"/>
+        <ObjectProperty IRI="#Posseses"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Injects"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Learns"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Maliciously_adds_bogus_device_to"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Maliciously_reconfigures"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Physical_access_to"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Physically_blocks"/>
+        <ObjectProperty IRI="#Functions"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Physically_steals"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Posseses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Queries"/>
+        <ObjectProperty IRI="#Interacts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ReadsFrom"/>
+        <ObjectProperty IRI="#Interacts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Received_by"/>
+        <ObjectProperty IRI="#Communicate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Receives"/>
+        <ObjectProperty IRI="#Communicate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Records"/>
+        <ObjectProperty IRI="#Functions"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Relays"/>
+        <ObjectProperty IRI="#Communicate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ReportsTo"/>
+        <ObjectProperty IRI="#Interacts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Sends"/>
+        <ObjectProperty IRI="#Communicate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Sent_by"/>
+        <ObjectProperty IRI="#Communicate"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Serves"/>
+        <ObjectProperty IRI="#Functions"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Sniffs"/>
+        <ObjectProperty IRI="#Attacks"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Uses"/>
+        <ObjectProperty IRI="#Interacts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Talks_(protocol)"/>
+        <ObjectProperty IRI="#Posseses"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Exploited_by"/>
+        <ObjectProperty IRI="#Exploits"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Received_by"/>
+        <ObjectProperty IRI="#Receives"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Sends"/>
+        <ObjectProperty IRI="#Sent_by"/>
+    </InverseObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Digital_access_level"/>
+        <DataProperty IRI="#Privilage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#GOOSE"/>
+        <DataProperty IRI="#Protocol_Name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Password"/>
+        <DataProperty IRI="#AccountRelated"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Physical_access_level"/>
+        <DataProperty IRI="#Privilage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Privilage"/>
+        <DataProperty IRI="#RoleRelated"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Username"/>
+        <DataProperty IRI="#AccountRelated"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AccountRelated"/>
+        <Class IRI="#Account"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Privilage"/>
+        <Class IRI="#Role"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Digital_access_level"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Password"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Physical_access_level"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Username"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Door_lock</IRI>
+        <Literal>Includes all physical access control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#General_Network_Protocols</IRI>
+        <Literal>HTTP, HTTPS, SSH, VPN, TCP/IP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ICS_Protocol</IRI>
+        <Literal>IEC61850: GOOSE, MMS, SV
+IEC60870-5-104</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interface</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Machine_Interface</IRI>
+        <Literal>USB, ethernet, hdmi, firewire, thunderbolt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Merging_Unit</IRI>
+        <Literal>Multi purpose sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Message</IRI>
+        <Literal>Packet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#User_interface</IRI>
+        <Literal>Keyboard, mouse, display</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wireless_Protocol</IRI>
+        <Literal>Zigbee, LTE</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
