@@ -2,9 +2,10 @@
 
 ## How to get:
 1. <code>git clone https://github.com/smartgridadsc/Ontology_CVE_Populator.git</code>
-2. <code>git submodule init</code>
-3. <code>git submodule update</code>
-4. Install python modules as necessary.
+2. <code>cd Ontology_CVE_Populator</code>
+3. <code>git submodule init</code>
+4. <code>git submodule update</code>
+5. Install python modules as necessary.
 
 ## How to use:
 ### Populating the ontology
