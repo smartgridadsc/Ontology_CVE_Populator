@@ -3,7 +3,8 @@ import json
 import xml.etree.ElementTree as ET
 
 import logging
-logging.basicConfig(level=logging.DEBUG)
+log_lvl = logging.DEBUG
+logging.basicConfig(level=log_lvl)
 logger = logging.getLogger(__name__)
 
 filename = "Paper_ontology.owl"
@@ -101,10 +102,11 @@ def AddCvesToOwl():
     global device_cve_dict
 
     # output files for debugging
-    new_cve_file = open("DEBUG_new_cves.json", "w+")
-    json.dump(new_cves, new_cve_file)
-    device_cve_dict_file = open("DEBUG_device_cve_dict.json", "w+")
-    json.dump(device_cve_dict, device_cve_dict_file)
+    if log_lvl == logging.DEBUG:
+        new_cve_file = open("DEBUG_new_cves.json", "w+")
+        json.dump(new_cves, new_cve_file)
+        device_cve_dict_file = open("DEBUG_device_cve_dict.json", "w+")
+        json.dump(device_cve_dict, device_cve_dict_file)
 
     comment_element = ET.Comment("Added by script")
     root.append(comment_element)
@@ -205,17 +207,10 @@ def SearchCveDirForDevices(device_list:list[str]):
 # Functions to parse owl file to extract devices
 ###################################################
 
-def GetDevicesToCheck() -> list[str]:
-    # TO DO: properly form class subclass tree
-    superclass_list = ["#Communiction_Device",
-                        "#Control_Computer",
-                        "#ICS_Device",
-                        "#Physical_Device",
-                        "#BYOD_Device",
-                        "#IoT_Device"]
+def ParseSubclassRelationsFromOwl() -> dict[str, list[str]]:
+    # { superclass: [ subclass1, subclass2, ... ], ... }
+    subclass_dict = {} 
 
-    device_list = []
-    class_count = 0
     subclass_rel_list = root.findall(f"{xml_ns}SubClassOf")
     for subclass_of_rel in subclass_rel_list:
         class_list = subclass_of_rel.findall(f"{xml_ns}Class")
@@ -233,19 +228,83 @@ def GetDevicesToCheck() -> list[str]:
             logger.error("<Class> has no IRI attribute")
 
         # logger.debug(f"<SubClassOf> <Class IRI=\"{subclass_iri}\"> is a subclass of <Class IRI=\"{superclass_iri}\">")
-        if superclass_iri not in superclass_list:
-            continue
+        if superclass_iri[1:] not in subclass_dict:
+            subclass_dict[superclass_iri[1:]] = [subclass_iri[1:]]
+        else:
+            subclass_dict[superclass_iri[1:]].append(subclass_iri[1:])
 
-        logger.debug(f"Found {subclass_iri[1:]}")
-        device_list.append(subclass_iri[1:])
-        class_count += 1
+    return subclass_dict
 
-        # else:
-        #     logger.debug("<SubClassOf> element does not have 2 <Class>")
 
-    print(class_count)
+def GetListOfLeafNodeSubClass(subclass_dict, superclass) -> list[str]:
+    if superclass not in subclass_dict:
+        return []
+    
+    leaf_subclass_list = []
+    for subclass in subclass_dict[superclass]:
+        leaf_list = GetListOfLeafNodeSubClass(subclass_dict, subclass)
+        if len(leaf_list) == 0:
+            leaf_subclass_list.append(subclass)
+        else:
+            leaf_subclass_list.extend(leaf_list)
+
+    return leaf_subclass_list
+
+
+def GetDevicesFromOwl() -> list[str]:
+    subclass_dict = ParseSubclassRelationsFromOwl()
+
+    device_list = GetListOfLeafNodeSubClass(subclass_dict, "Devices")
+
+    logger.debug(f"Found Devices: {device_list}")
+    if log_lvl == logging.DEBUG:
+        devices_file = open("DEBUG_devices.json", "w+")
+        json.dump(device_list, devices_file)
 
     return device_list
+
+
+# def GetDevicesToCheck() -> list[str]:
+#     # TO DO: properly form class subclass tree
+#     superclass_list = ["#Communiction_Device",
+#                         "#Control_Computer",
+#                         "#ICS_Device",
+#                         "#Physical_Device",
+#                         "#BYOD_Device",
+#                         "#IoT_Device"]
+#
+#     device_list = []
+#     class_count = 0
+#     subclass_rel_list = root.findall(f"{xml_ns}SubClassOf")
+#     for subclass_of_rel in subclass_rel_list:
+#         class_list = subclass_of_rel.findall(f"{xml_ns}Class")
+#         if len(class_list) != 2:
+#             continue
+#
+#         try:
+#             subclass = class_list[0]
+#             subclass_iri = subclass.attrib["IRI"]
+#             superclass = class_list[1]
+#             superclass_iri = superclass.attrib["IRI"]
+#         except IndexError as e:
+#             logger.error("<SubClassOf> element does not have 2 <Class>, but passed the list len check")
+#         except KeyError as e:
+#             logger.error("<Class> has no IRI attribute")
+#
+#         # logger.debug(f"<SubClassOf> <Class IRI=\"{subclass_iri}\"> is a subclass of <Class IRI=\"{superclass_iri}\">")
+#         if superclass_iri not in superclass_list:
+#             continue
+#
+#         logger.debug(f"Found {subclass_iri[1:]}")
+#         device_list.append(subclass_iri[1:])
+#         class_count += 1
+#
+#         # else:
+#         #     logger.debug("<SubClassOf> element does not have 2 <Class>")
+#
+#     print(class_count)
+#
+#     return device_list
     
 
 ###################################################
@@ -289,7 +348,7 @@ def Main():
     SetupRoot()
 
     # Find classes to check
-    device_list = GetDevicesToCheck()
+    device_list = GetDevicesFromOwl()
 
     # Check cve json files
     SearchCveDirForDevices(device_list)
@@ -299,7 +358,6 @@ def Main():
 
     # Finalize
     WriteNewOwl()
-
 
 
 def Test():
